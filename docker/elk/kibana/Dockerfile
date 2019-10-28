@@ -33,9 +33,9 @@ RUN sed -i 's/dl-cdn/dl-2/g' /etc/apk/repositories && \
     sed -i 's/#server.host: "localhost"/server.host: "0.0.0.0"/' /usr/share/kibana/config/kibana.yml && \
     sed -i 's/#elasticsearch.hosts: \["http:\/\/localhost:9200"\]/elasticsearch.hosts: \["http:\/\/elasticsearch:9200"\]/' /usr/share/kibana/config/kibana.yml && \
     sed -i 's/#server.rewriteBasePath: false/server.rewriteBasePath: false/' /usr/share/kibana/config/kibana.yml && \
-    sed -i "s/#005571/#e20074/g" /usr/share/kibana/built_assets/css/plugins/kibana/index.css && \
-    sed -i "s/#007ba4/#9e0051/g" /usr/share/kibana/built_assets/css/plugins/kibana/index.css && \
-    sed -i "s/#00465d/#4f0028/g" /usr/share/kibana/built_assets/css/plugins/kibana/index.css && \
+    sed -i "s/#005571/#e60000/g" /usr/share/kibana/built_assets/css/plugins/kibana/index.css && \
+    sed -i "s/#007ba4/#b30000/g" /usr/share/kibana/built_assets/css/plugins/kibana/index.css && \
+    sed -i "s/#00465d/#400000/g" /usr/share/kibana/built_assets/css/plugins/kibana/index.css && \
     echo "xpack.infra.enabled: false" >> /usr/share/kibana/config/kibana.yml && \ 
     echo "xpack.logstash.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
     echo "xpack.canvas.enabled: false" >> /usr/share/kibana/config/kibana.yml && \
